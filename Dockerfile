@@ -17,4 +17,7 @@ EXPOSE 10000/udp 10001/udp 10002/udp 10003/udp 10004/udp 10005/udp 10006/udp 100
 COPY run.sh /run.sh
 COPY autoconf.videobridge.exp /autoconf.videobridge.exp
 COPY autoconf.jitsimeet.exp /autoconf.jitsimeet.exp
+
+RUN chmod +x autoconf.videobridge.exp autoconf.jitsimeet.exp
+
 CMD /run.sh
