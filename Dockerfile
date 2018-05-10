@@ -4,11 +4,11 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
 RUN apt-get update && \
-	apt-get install -y wget dnsutils vim telnet expect gnupg2 gnupg1 gnupg apt-transport-https
+	apt-get install --allow-unauthenticated -y gnupg2 wget dnsutils vim telnet expect apt-transport-https
 RUN wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | apt-key add -
 RUN sh -c "echo 'deb https://download.jitsi.org stable/' > /etc/apt/sources.list.d/jitsi-stable.list"
 RUN apt-get -y update
-RUN apt-get -y install jitsi-meet
+RUN apt-get --allow-unauthenticated -y install jitsi-meet
 RUN	apt-get clean
 
 EXPOSE 80 443 5347
