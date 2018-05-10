@@ -2,6 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Sergey Sushenko <phantom@wfap.ru>
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
+ENV PUBLIC_HOSTNAME=127.0.0.1
 
 RUN apt-get update && \
 	apt-get install --allow-unauthenticated -y gnupg2 wget dnsutils vim telnet expect apt-transport-https
