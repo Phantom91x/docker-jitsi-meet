@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:latest
 MAINTAINER Sergey Sushenko <phantom@wfap.ru>
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
