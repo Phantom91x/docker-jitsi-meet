@@ -29,7 +29,7 @@ or (subsequent times):
 
 ## Usage (downloading pre-built image from Docker Hub)
 
-	$ docker run -it --name jitsi-meet -p 443:443 robertoandrade/jitsi-meet
+	$ docker run -it --name jitsi-meet -p 443:443 phantom91x/jitsi-meet
 
 ## Accessing the web app:
 
@@ -49,4 +49,4 @@ To help improve this container [docker-jitsi-meet][5]
 [2]:https://www.docker.com
 [3]:https://jitsi.org/
 [4]:http://docs.docker.com
-[5]:https://github.com/robertoandrade/docker-jitsi-meet
+[5]:https://github.com/Phantom91x/docker-jitsi-meet

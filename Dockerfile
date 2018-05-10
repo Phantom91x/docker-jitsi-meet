@@ -1,5 +1,5 @@
 FROM debian:latest
-MAINTAINER Roberto Andrade <roberto@cloud.com>
+MAINTAINER Sergey Sushenko <phantom@wfap.ru>
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
